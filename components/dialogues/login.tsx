@@ -3,7 +3,6 @@
 import { Dialog, Transition } from '@headlessui/react';
 import { Fragment, useState } from 'react';
 import {SubmitHandler,useForm} from 'react-hook-form';
-import Image from "next/image";
 
 interface LoginInputs {
     
@@ -25,7 +24,7 @@ export const LoginDialogue = () => {
   }
 
   const validationSchema = { 
-    required: "can't be empty",
+    required: "can&apos;t be empty",
     minLength: {
       value: 8,
       message: "minimum length is 8 characters"
@@ -96,7 +95,7 @@ export const LoginDialogue = () => {
                                 <label htmlFor="username" className="text-sm font-normal uppercase text-left tracking-tighter leading-tighter text-slate-600">username</label>
                                 <input {...register("username", validationSchema)} type="text"  className='text-sm w-full outline-none rounded-lg bg-slate-200 px-6 py-2 text-slate-800 placeholder-cyan-900 focus:ring-2 focus:ring-cyan-800 focus:bg-zinc-50' placeholder='Type Staff ID here'/>
                                 {
-                                errors && errors.username?.type === "required" && ( <p className="text-left text-sm text-normal text-rose-600">can't be empty</p>)
+                                errors && errors.username?.type === "required" && ( <p className="text-left text-sm text-normal text-rose-600">can&apos;t be empty</p>)
                                 }
                                 {
                                 errors && errors.username?.type === "minLength" && ( <p className="text-left text-sm text-normal text-rose-600">minimum length must be 8 characters</p>)
@@ -107,7 +106,7 @@ export const LoginDialogue = () => {
                                 <label htmlFor="password" className="text-sm font-normal uppercase text-left tracking-tighter leading-tighter text-slate-600">password</label>
                                 <input {...register("password", validationSchema)} type="password"  className='text-sm w-full outline-none rounded-lg bg-slate-200 px-6 py-2 text-slate-800 placeholder-cyan-900 focus:ring-2 focus:ring-cyan-800 focus:bg-zinc-50' placeholder='Type Password here'/>
                                 {
-                                errors && errors.password?.type === "required" && ( <p className="text-left text-sm text-normal text-rose-600">can't be empty</p>)
+                                errors && errors.password?.type === "required" && ( <p className="text-left text-sm text-normal text-rose-600">can&apos;t be empty</p>)
                                 }
                                 {
                                 errors && errors.password?.type === "minLength" && ( <p className="text-left text-sm text-normal text-rose-600">minimum length must be 8 characters</p>)

@@ -21,7 +21,7 @@ export default function AddNewBook() {
     const {register, handleSubmit, formState:{errors}} = useForm<Inputs>();
 
     const validationSchema = {
-        required: "can't be empty",
+        required: "can&apos;t be empty",
         minLength: {
             value: 5,
             message: "minimum length must be 8 characters"
@@ -49,7 +49,7 @@ export default function AddNewBook() {
                             <label className='text-sm text-slate-700 font-medium tracking-tight' htmlFor="">Book ID</label>
                             <input {...register("book_id", validationSchema)} className="rounded-lg bg-zinc-50 font-semibold text-sm px-4 py-1.5 outline-none ring ring-zinc-200 border-none text-cyan-800  focus:ring-blue-400 focus:bg-white placeholder-slate-500" type="text"  placeholder="BK-0400"/>
                             {
-                                errors && errors.book_id?.type === "required" && ( <p className="text-left text-sm text-normal text-rose-600">can't be empty</p>)
+                                errors && errors.book_id?.type === "required" && ( <p className="text-left text-sm text-normal text-rose-600">can&apos;t be empty</p>)
                             }
                             {
                                 errors && errors.book_id?.type === "minLength" && ( <p className="text-left text-sm text-normal text-rose-600">minimum length must be 8 characters</p>)
@@ -60,7 +60,7 @@ export default function AddNewBook() {
                             <label className='text-sm text-slate-700 font-medium tracking-tight' htmlFor="">Book Name</label>
                             <input {...register("book_name", validationSchema)} className="rounded-lg bg-zinc-50 font-semibold text-sm px-4 py-1.5 outline-none ring ring-zinc-200 border-none text-cyan-800  focus:ring-blue-400 focus:bg-white placeholder-slate-500" type="text"  placeholder="The Power of Money"/>
                             {
-                                errors && errors.book_name?.type === "required" && ( <p className="text-left text-sm text-normal text-rose-600">can't be empty</p>)
+                                errors && errors.book_name?.type === "required" && ( <p className="text-left text-sm text-normal text-rose-600">can&apos;t be empty</p>)
                             }
                             {
                                 errors && errors.book_name?.type === "minLength" && ( <p className="text-left text-sm text-normal text-rose-600">minimum length must be 8 characters</p>)
@@ -71,7 +71,7 @@ export default function AddNewBook() {
                             <label className='text-sm text-slate-700 font-medium tracking-tight' htmlFor="">Price</label>
                             <input {...register("book_price", validationSchema)} className="rounded-lg bg-zinc-50 font-semibold text-sm px-4 py-1.5 outline-none ring ring-zinc-200 border-none text-cyan-800  focus:ring-blue-400 focus:bg-white placeholder-slate-500" type="text"  placeholder="GHS 20"/>
                             {
-                                errors && errors.book_price?.type === "required" && ( <p className="text-left text-sm text-normal text-rose-600">can't be empty</p>)
+                                errors && errors.book_price?.type === "required" && ( <p className="text-left text-sm text-normal text-rose-600">can&apos;t be empty</p>)
                             }
                             {
                                 errors && errors.book_price?.type === "minLength" && ( <p className="text-left text-sm text-normal text-rose-600">minimum length must be 8 characters</p>)
@@ -83,7 +83,7 @@ export default function AddNewBook() {
                             {/* <SelectDropdown list={['Self Help', 'Motivation', 'Money','Love', 'Anime']} register={register}/> */}
                             <input {...register("book_category", validationSchema)}  className="rounded-lg bg-zinc-50 font-semibold text-sm px-4 py-1.5 outline-none ring ring-zinc-200 border-none text-cyan-800  focus:ring-blue-400 focus:bg-white placeholder-slate-500" type="text" placeholder="Anime"/>
                             {
-                                errors && errors.book_category?.type === "required" && ( <p className="text-left text-sm text-normal text-rose-600">can't be empty</p>)
+                                errors && errors.book_category?.type === "required" && ( <p className="text-left text-sm text-normal text-rose-600">can&apos;t be empty</p>)
                             }
                             {
                                 errors && errors.book_category?.type === "minLength" && ( <p className="text-left text-sm text-normal text-rose-600">minimum length must be 8 characters</p>)
@@ -94,7 +94,7 @@ export default function AddNewBook() {
                             <label className='text-sm text-slate-700 font-medium tracking-tight' htmlFor="">Description</label>
                             <textarea {...register("book_description")} name="book_description" id="" cols={60} rows={4} className="p-6 ring ring-zinc-200 rounded-lg w-full outline-none resize-none border-none focus:ring-blue-400" placeholder="Love Will is written Steven T'challa"></textarea>
                             {
-                                errors && errors.book_description?.type === "required" && ( <p className="text-left text-sm text-normal text-rose-600">can't be empty</p>)
+                                errors && errors.book_description?.type === "required" && ( <p className="text-left text-sm text-normal text-rose-600">can&apos;t be empty</p>)
                             }
                             {
                                 errors && errors.book_description?.type === "minLength" && ( <p className="text-left text-sm text-normal text-rose-600">minimum length must be 8 characters</p>)

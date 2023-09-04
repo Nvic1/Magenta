@@ -40,7 +40,7 @@ export const SearchBar = () => {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="fixed inset-0 bg-black bg-opacity-25" />
+            <div className="fixed inset-0 backdrop-blur-sm bg-cyan-300/30" />
           </Transition.Child>
 
           <div className="fixed inset-0 overflow-y-auto">
@@ -54,11 +54,11 @@ export const SearchBar = () => {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="relative px-8 py-6 transform overflow-hidden rounded-xl bg-white p-6  align-middle transition-all">
+                <Dialog.Panel className="absolute px-8 py-6 top-0 mt-20 transform overflow-hidden rounded-xl bg-white p-6  align-middle transition-all">
 
 
 
-                    <div className="flex flex-col bg-white rounded-xl w-80 space-y-4">
+                    <div className="flex flex-col rounded-xl w-80 space-y-4">
                         <div className="px-4 py-2 border-b-2 border-slate-300">
                             <input type="text" name="" id="" className="bg-white border-none outline-none text-base text-cyan-800 font-semibold placeholder-slate-400" placeholder='BOK-400, Love Can Tell' />
                         </div>

@@ -25,12 +25,12 @@ export default function NavItemDrop() {
 <>
 
   {
-    menuItems.map(item => (
+    menuItems.map((item, i) => (
 
 
       <Disclosure>
         {({ open }) => (
-          <li>
+          <li key={i}>
             <Disclosure.Button className="pl-2 flex space-x-4 text-left text-base w-full hover:text-cyan-700">
               <ChevronRightIcon
                 className={`${
